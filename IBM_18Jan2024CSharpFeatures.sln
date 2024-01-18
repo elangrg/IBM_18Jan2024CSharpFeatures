@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBM_18Jan2024CSharpFeatures", "IBM_18Jan2024CSharpFeatures\IBM_18Jan2024CSharpFeatures.csproj", "{2AC8EE91-9DEA-4F79-B001-96AA64EB1AF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC8EE91-9DEA-4F79-B001-96AA64EB1AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC8EE91-9DEA-4F79-B001-96AA64EB1AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC8EE91-9DEA-4F79-B001-96AA64EB1AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC8EE91-9DEA-4F79-B001-96AA64EB1AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E95ED8AB-A0F0-405C-A516-9EB1FF443A65}
+	EndGlobalSection
+EndGlobal
