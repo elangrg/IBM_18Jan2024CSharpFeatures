@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CtorEg.cs" />
+    <Compile Include="InterfaceEg.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\IEmployee.cs" />
+    <Compile Include="Models\IProduct.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropIndexEg.cs" />
+    <Compile Include="UDMEg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

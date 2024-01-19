@@ -10,82 +10,63 @@ namespace IBM_18Jan2024CSharpFeatures
     {
         public static void Main()
         {
+            int choice = 0;
 
-            //int? k = null;
-
-            //Nullable<Int32> l = null;
-            //if (k.HasValue)
-            //{
-            //    Console.WriteLine(k.Value);
-            //}
+            do
+            {
+                Console.Clear();
 
 
-            int i = 100;
-            Console.WriteLine("Before Display  i={0} ", i);
-            display(i);
-            Console.WriteLine("After Display i={0} ", i);
+                Console.WriteLine(  "1.User Defined Method\n2.Properties and Indexers\n3.CTor\n4.Interface\n-1:EXIT\n\n");
+                Console.Write("Enter Choice:");
 
-            displayRef(ref i);
-            Console.WriteLine("After DisplayRef i={0} ", i);
+                if (!int.TryParse(Console.ReadLine(), out choice))
+                {
 
-            displayOut(out i);
-            Console.WriteLine("After DisplayOut i={0} ", i);
+                    Console.WriteLine("Invalid option !!!\n\npress any key to continue..." );
 
-            displayParams(10, 20, 30, 40);
+                    Console.ReadKey();
+                    return;
 
-            int[] arr = { 1, 2, 3, 4, 5 };
 
-            int[] arr1 = new int[2];
+                }
 
-            int[,,] arr2= new int[2,2,2];
+                Console.Clear();
 
-            displayParams(arr);
-            displayParams();
+                if (choice==1)
+                {
+                    UDMEg.UDMExec();
+                    Console.WriteLine( "\n\n\nPress any Key to Continue...");
+                    Console.ReadKey();
+                }
 
-            Console.WriteLine(add(100, 200));
-            Console.WriteLine(add(100, 200, 500));
-            Console.WriteLine(add(b: 100, d: 200, a: 100));
+                if (choice==2)
+                {
+                    PropIndexEg.Exec();
+                    Console.WriteLine( "\n\n\nPress any Key to Continue...");
+                    Console.ReadKey();
+                }
+
+                if (choice == 3)
+                {
+                    CtorEg.Exec();
+                    Console.WriteLine("\n\n\nPress any Key to Continue...");
+                    Console.ReadKey();
+                }
+
+                if (choice == 4)
+                {
+                    InterfaceEg.Exec();
+                    Console.WriteLine("\n\n\nPress any Key to Continue...");
+                    Console.ReadKey();
+                }
+            } while (choice!=-1);
+
+
+            
         }
 
-        static void display(int x)
-        {
-            x++;
-            Console.WriteLine(" In Display x={0} ", x);
-        }
-
-
-        static void displayRef(ref int x)
-        {
-            x++;
-            Console.WriteLine(" In DisplayRef x={0} ", x);
-        }
-
-        static void displayOut(out int x)
-        {
-
-            x = 0;
-            x++;
-            Console.WriteLine(" In DisplayOut x={0} ", x);
-        }
-
-        static void displayParams(params int[] x)
-        {
-            int j = 0;
-            if (x.Length == 0)
-                Console.WriteLine("No Values in X[] ");
-            else if (x.Length > 0)
-                for (j = 0; j < x.Length; j++)
-                    Console.WriteLine(" In Display Params-> x[{0}]={1} ", j, x[j]);
-        }
-
-
-
-        static int add(int a, int b, int c = 100, int d = 200)
-        {
-
-            return a + b + c+d;
-
-        }
+      
     }
 
 }
