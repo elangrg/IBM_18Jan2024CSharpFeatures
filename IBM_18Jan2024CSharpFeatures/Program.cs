@@ -8,7 +8,7 @@ namespace IBM_18Jan2024CSharpFeatures
 {
     internal class Program
     {
-        public static void Main()
+         static void Main()
         {
             int choice = 0;
 
@@ -17,7 +17,7 @@ namespace IBM_18Jan2024CSharpFeatures
                 Console.Clear();
 
 
-                Console.WriteLine(  "1.User Defined Method\n2.Properties and Indexers\n3.CTor\n4.Interface\n-1:EXIT\n\n");
+                Console.WriteLine(  "1.User Defined Method\n2.Properties and Indexers\n3.CTor\n4.Interface\n5.Generic\n0:EXIT\n\n");
                 Console.Write("Enter Choice:");
 
                 if (!int.TryParse(Console.ReadLine(), out choice))
@@ -60,7 +60,14 @@ namespace IBM_18Jan2024CSharpFeatures
                     Console.WriteLine("\n\n\nPress any Key to Continue...");
                     Console.ReadKey();
                 }
-            } while (choice!=-1);
+                
+                if (choice == 5)
+                {
+                  //  GenericEg.Exec();
+                    Console.WriteLine("\n\n\nPress any Key to Continue...");
+                    Console.ReadKey();
+                }
+            } while (choice!=0);
 
 
             
