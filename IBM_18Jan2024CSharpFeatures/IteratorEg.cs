@@ -10,16 +10,42 @@ namespace IBM_18Jan2024CSharpFeatures
     internal class IteratorEg
     {
         static void Main()
-        { 
-            MSEmployee obj=new MSEmployee();
-            foreach (string item in obj)
+        {
+            //MSEmployee obj=new MSEmployee();
+            //foreach (string item in obj)
+            //{
+            //    Console.WriteLine(item);
+
+            //}
+
+
+            foreach (string name in GetNames(true))
             {
-                Console.WriteLine(item);
-                
+                Console.WriteLine(  name);
+
             }
+
+
 
             Console.ReadKey(  );
         }
+
+
+
+        static IEnumerable GetNames(bool all=false)
+        {
+
+            yield return "Ganesh";
+            yield return "Mahesh";
+            yield return "Suresh";
+
+            if (all==false) { yield break; }
+
+            yield return "Ramesh";
+            yield return "Dinesh";
+
+        }
+
 
 
     }

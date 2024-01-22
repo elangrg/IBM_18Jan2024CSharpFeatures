@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IBM_18Jan2024CSharpFeatures.Models
 {
-    internal class Product : IProduct
+    internal partial class Product : IProduct
     {
         public string ProductName { get; set; }
         public string GetProductDetails() { return ProductName; }
