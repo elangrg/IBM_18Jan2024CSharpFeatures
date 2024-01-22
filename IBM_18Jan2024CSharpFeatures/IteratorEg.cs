@@ -9,7 +9,6 @@ namespace IBM_18Jan2024CSharpFeatures
 {
     internal class IteratorEg
     {
-
         static void Main()
         { 
             MSEmployee obj=new MSEmployee();
