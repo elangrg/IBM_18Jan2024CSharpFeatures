@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>IBM_18Jan2024CSharpFeatures.CollectionEg</StartupObject>
+    <StartupObject>IBM_18Jan2024CSharpFeatures.IteratorEg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,6 +51,7 @@
     <Compile Include="DelegateEg.cs" />
     <Compile Include="GenericEg.cs" />
     <Compile Include="InterfaceEg.cs" />
+    <Compile Include="IteratorEg.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IEmployee.cs" />
     <Compile Include="Models\IProduct.cs" />
